@@ -29,7 +29,7 @@
 
 .header__logo {
     display: flex;
-    width: 80px;
+    width: 79px;
 
     img {
         width: 100%;
@@ -87,7 +87,7 @@
     font-weight: 600;
     color: $link-color;
     margin-left: 47px;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s;
     position: relative;
 
     &:active,
@@ -97,6 +97,7 @@
 
     @include for-tablets {
         margin-left: 0;
+        font-size: 13px;
     }
 
     @include for-phones {
@@ -135,8 +136,8 @@
 
     @include for-tablets {
         display: flex;
-        top: 19px;
-        right: 30px;
+        top: 20px;
+        right: 35px;
     }
 
     @include for-phones {

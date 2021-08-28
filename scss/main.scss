@@ -2,6 +2,7 @@
 @import "./mixins/mixins";
 
 @import "./components/header.scss";
+@import "./components/banner.scss";
 
 @include main;
 
@@ -11,7 +12,7 @@
     margin: 0 auto;
 
     @include for-tablets {
-        padding: 0 30px;
+        padding: 0 35px;
     }
 
     @include for-phones {

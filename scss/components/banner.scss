@@ -1,0 +1,250 @@
+@import "../variables/vars";
+@import "../mixins/mixins";
+
+.banner {
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url("../images/Banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;  
+    padding-top: 180px;
+    padding-bottom: 139px;
+
+    @include for-tablets {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+
+    @include for-phones {
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+}
+
+.banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__content {
+    max-width: 555px;
+    width: 100%;
+    padding-right: 15px;
+
+    @include for-tablets {
+        max-width: 520px;
+    }
+
+    @include for-phones {
+        max-width: 350px;
+    }
+}
+
+.banner__logo {
+    width: 175px;
+    margin-bottom: 21px;
+
+    img {
+        width: 100%;
+    }
+
+    @include for-tablets {
+        width: 150px;
+    }
+
+    @include for-phones {
+        width: 110px;
+        margin-bottom: 14px;
+    }
+}
+
+.banner__header {
+    font-family: $second-font;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    line-height: 43px;
+    position: relative;
+    margin-bottom: 69px;
+
+    @include for-tablets {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 52px;
+    }
+
+    @include for-phones {
+        font-size: 21px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+}
+
+.banner__header::after {
+    position: absolute;
+	content: '';
+	height: 2px;
+	width: 64px;
+	left: 0;
+	bottom: -34px;
+    background-color: $main-color;
+
+    @include for-tablets {
+        bottom: -27px;
+    }
+
+    @include for-phones {
+        width: 50px;
+        bottom: -20px;
+    }
+}
+
+.banner__desc-box {
+    max-width: 470px;
+    width: 100%;
+    margin-bottom: 41px;
+
+    @include for-tablets {
+        max-width: 400px;
+        margin-bottom: 35px;
+    }
+
+    @include for-phones {
+        max-width: 290px;
+        margin-bottom: 30px;
+    }
+}
+
+.banner__desc {
+    font-family: $second-font;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.1px;
+
+    @include for-tablets {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    @include for-phones {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+
+.banner__btn {
+    text-decoration: none;
+    font-family: $main-font;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    border: 2px solid #ffffff;
+    padding: 9px 29px;
+    transition: all 0.2s;
+    display: inline-block;
+
+    &:active,
+    &:hover {
+        background-color: #ffffff;
+        color: $second-header-color;
+    }
+
+    @include for-tablets {
+        font-size: 13px;
+        padding: 8px 24px;
+    }
+
+    @include for-phones {
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+}
+
+.banner__form-box {
+    max-width: 360px;
+    width: 100%;
+
+    @include for-tablets {
+        display: none;
+    }
+}
+
+.banner__form {
+    padding-top: 30px;
+    background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__form-header {
+    text-align: center;
+    background-color: $bg-light;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 4px 4px 0 0;
+    padding: 13px 0;
+    margin-top: 30px;
+}
+
+.banner__form-tittle {
+    font-size: 20px;
+    font-family: $main-font;
+    font-weight: 700;
+    color: $second-header-color;
+
+    span {
+        text-transform: uppercase;
+        color: $main-color;
+    }
+}
+
+.banner__input {
+    margin: 0 auto 42px;
+    width: 280px;
+    padding: 5px 5px 5px 10px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-family: $main-font;
+    border-bottom: 1px solid $placeholder-color;
+
+    &:focus {
+		outline: none;
+        border: 1px solid $main-color;
+	}
+
+    @include placeholder {
+        font-family: $main-font;
+        color: $placeholder-color;
+    }
+
+    &:-webkit-autofill,
+	&:-webkit-autofill:hover {
+		-webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+		box-shadow: 0 0 0px 1000px #ffffff inset;
+	}
+}
+
+.banner__submit {
+    border: none;
+    color: #ffffff;
+    background-color: $main-color;
+    font-size: 15px;
+    padding: 17px;
+    margin-top: 5px;
+    font-family: $main-font;
+    font-weight: 600;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:active,
+    &:hover {
+        background-color: $main-color-light;
+    }
+}
+
+
