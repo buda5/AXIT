@@ -5,3 +5,18 @@
 		box-sizing: border-box;
 	}
 }
+
+@mixin for-tablets {
+	@media (max-width: 1199px) { @content; }
+}
+
+@mixin for-phones {
+	@media (max-width: 641px) { @content; }
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder           { @content; }
+	&::-moz-placeholder          { @content; }
+	&:-ms-input-placeholder      { @content; }
+}
