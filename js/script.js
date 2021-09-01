@@ -17,10 +17,9 @@ $('.header__btn').on("click", function() {
 $('.features__tab').on("click", function() {
 	const clickedTab = $(this).data('tab');
 
-	$('.features__info').removeClass('features__info--active');
-	$(`.features__info[data-info="${clickedTab}"]`).addClass('features__info--active');
+	$('.features__content').removeClass('features__content--active');
+	$(`.features__content[data-content="${clickedTab}"]`).addClass('features__content--active');
 
     $('.features__tab').removeClass('features__tab--active');
     $(this).addClass('features__tab--active');
-
 });

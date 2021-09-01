@@ -28,31 +28,31 @@
   }
 }
 
-.social__header {
+.social__info-head {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #333333;
   margin-bottom: 3px;
 }
 @media (max-width: 1199px) {
-  .social__header {
+  .social__info-head {
     margin-bottom: 0;
   }
 }
 @media (max-width: 641px) {
-  .social__header {
+  .social__info-head {
     font-size: 17px;
     margin-bottom: 10px;
   }
 }
 
-.social__desc {
+.social__info-desc {
   font-size: 14px;
   color: #9c9da0;
   font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 1199px) {
-  .social__desc {
+  .social__info-desc {
     display: none;
   }
 }
