@@ -44,10 +44,6 @@
     width: 175px;
     margin-bottom: 21px;
 
-    img {
-        width: 100%;
-    }
-
     @include for-tablets {
         width: 150px;
     }
@@ -56,6 +52,10 @@
         width: 110px;
         margin-bottom: 14px;
     }
+}
+
+.banner__logo-img {
+    width: 100%;
 }
 
 .banner__header {

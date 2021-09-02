@@ -28,15 +28,6 @@
 .options__image-box {
   max-width: 453px;
 }
-.options__image-box img {
-  width: 100%;
-  box-shadow: 0 8px 30px rgba(0, 1, 1, 0.6);
-}
-@media (max-width: 641px) {
-  .options__image-box img {
-    box-shadow: none;
-  }
-}
 @media (max-width: 1199px) {
   .options__image-box {
     order: 1;
@@ -48,23 +39,33 @@
   }
 }
 
-.options__content {
+.options__img {
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 1, 1, 0.6);
+}
+@media (max-width: 641px) {
+  .options__img {
+    box-shadow: none;
+  }
+}
+
+.options__content-text {
   max-width: 452px;
 }
 @media (max-width: 1199px) {
-  .options__content {
+  .options__content-text {
     align-self: flex-start;
     max-width: 800px;
     margin-bottom: 40px;
   }
 }
 @media (max-width: 641px) {
-  .options__content {
-    margin-bottom: 20px;
+  .options__content-text {
+    margin-bottom: 15px;
   }
 }
 
-.options__content-head {
+.options__header {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -73,13 +74,13 @@
   position: relative;
 }
 @media (max-width: 641px) {
-  .options__content-head {
+  .options__header {
     font-size: 17px;
     margin-bottom: 40px;
   }
 }
 
-.options__content-head::after {
+.options__header::after {
   content: "";
   position: absolute;
   left: 0;
@@ -89,13 +90,13 @@
   bottom: -26px;
 }
 @media (max-width: 641px) {
-  .options__content-head::after {
+  .options__header::after {
     width: 50px;
     bottom: -20px;
   }
 }
 
-.options__content-desc {
+.options__desc {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #9c9da0;
@@ -103,19 +104,19 @@
   margin-bottom: 41px;
 }
 @media (max-width: 1199px) {
-  .options__content-desc {
+  .options__desc {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 641px) {
-  .options__content-desc {
+  .options__desc {
     font-size: 13px;
     line-height: 17px;
     margin-bottom: 25px;
   }
 }
 
-.options__info {
+.options__inner {
   display: flex;
 }
 
@@ -159,7 +160,7 @@
   }
 }
 
-.options__box-head {
+.options__box-title {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -167,7 +168,7 @@
   margin-bottom: 5px;
 }
 @media (max-width: 641px) {
-  .options__box-head {
+  .options__box-title {
     font-size: 13px;
   }
 }

@@ -17,7 +17,7 @@
     }
 }
 
-.header__main-nav {
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,16 +31,16 @@
     display: flex;
     width: 79px;
 
-    img {
-        width: 100%;
-    }
-
     @include for-tablets {
         align-self: flex-start;
     }
 }
 
-.header__nav-bar {
+.header__logo-img {
+    width: 100%;
+}
+
+.header__navbar {
     display: flex;
     align-items: center;
 
@@ -70,7 +70,7 @@
     }
 }
 
-.header__list-item {
+.header__item {
     @include for-tablets {
         margin-bottom: 12px;
 

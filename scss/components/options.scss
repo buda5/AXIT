@@ -27,15 +27,6 @@
 
 .options__image-box {
     max-width: 453px;
-   
-    img {
-        width: 100%;
-        box-shadow: 0 8px 30px rgb(0 1 1 / 60%);
-
-        @include for-phones {
-            box-shadow: none;
-        }
-    }
 
     @include for-tablets {
         order: 1;
@@ -46,7 +37,16 @@
     }
 }
 
-.options__content {
+.options__img {
+    width: 100%;
+    box-shadow: 0 8px 30px rgb(0 1 1 / 60%);
+
+    @include for-phones {
+        box-shadow: none;
+    }
+}
+
+.options__content-text {
     max-width: 452px;
 
     @include for-tablets {
@@ -56,11 +56,11 @@
     }
 
     @include for-phones {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 }
 
-.options__content-head {
+.options__header {
     font-family: $main-font;
     font-size: 20px;
     font-weight: 700;
@@ -74,7 +74,7 @@
     }
 }
 
-.options__content-head::after {
+.options__header::after {
     content: '';
     position: absolute;
     left: 0;
@@ -89,7 +89,7 @@
     }
 }
 
-.options__content-desc {
+.options__desc {
     font-family: $main-font;
     font-size: 14px;
     color: $text-color-light;
@@ -107,7 +107,7 @@
     }
 }
 
-.options__info {
+.options__inner {
     display: flex;
 }
 
@@ -148,7 +148,7 @@
     }
 }
 
-.options__box-head {
+.options__box-title {
     font-family: $main-font;
     font-size: 14px;
     font-weight: 600;

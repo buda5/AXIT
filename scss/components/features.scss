@@ -87,7 +87,7 @@
     pointer-events: none;
 }
 
-.features__tab-head {
+.features__tab-title {
     color: #ffffff;
     font-size: 15px;
     font-family: $main-font;
@@ -99,7 +99,7 @@
     }
 }
 
-.features__content {
+.features__content-text {
     display: none;
     padding-top: 3px;
     max-width: 500px;
@@ -110,11 +110,11 @@
     }
 }
 
-.features__content--active {
+.features__content-text--active {
     display: block;
 }
 
-.features__content-head {
+.features__header {
     color: $second-header-color;
     font-family: $main-font;
     font-weight: 700;
@@ -128,7 +128,7 @@
     }
 }
 
-.features__content-head::after {
+.features__header::after {
     content: '';
     position: absolute;
     left: 0;
@@ -143,7 +143,7 @@
     }
 }
 
-.features__content-desc {
+.features__desc {
     font-family: $main-font;
     font-size: 14px;
     color: $text-color;

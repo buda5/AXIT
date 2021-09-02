@@ -45,9 +45,6 @@
   width: 175px;
   margin-bottom: 21px;
 }
-.banner__logo img {
-  width: 100%;
-}
 @media (max-width: 1199px) {
   .banner__logo {
     width: 150px;
@@ -58,6 +55,10 @@
     width: 110px;
     margin-bottom: 14px;
   }
+}
+
+.banner__logo-img {
+  width: 100%;
 }
 
 .banner__header {

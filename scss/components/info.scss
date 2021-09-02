@@ -1,0 +1,111 @@
+@import "../variables/vars";
+@import "../mixins/mixins";
+
+.info {
+    background-color: $bg-light;
+    padding: 132px 0;
+
+    @include for-tablets {
+        padding: 60px 0;
+    }
+
+    @include for-phones {
+        padding: 30px 0;
+    }
+}
+
+.info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-tablets {
+        flex-direction: column;
+    }
+}
+
+.info__content-text {
+    max-width: 474px;
+
+    @include for-tablets {
+        align-self: flex-end;
+        max-width: 800px;
+        margin-bottom: 40px;
+    }
+
+    @include for-phones {
+        margin-bottom: 15px;
+    }
+}
+
+.info__header {
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 700;
+    color: $second-header-color;
+    margin-bottom: 52px;
+    position: relative;
+
+    @include for-tablets {
+        text-align: right;
+    }
+
+    @include for-phones {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+}
+
+.info__header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+	width: 64px;
+    background-color: $main-color;
+    bottom: -26px;
+
+    @include for-tablets {
+        left: auto;
+        right: 0;
+    }
+
+    @include for-phones {
+        width: 50px;
+        bottom: -20px;
+    }
+}
+
+.info__desc {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color;
+    margin-bottom: 20px;
+
+    @include for-tablets {
+        text-align: right;
+    }
+
+    @include for-phones {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+
+.info__image-box {
+    max-width: 453px;
+
+    @include for-phones {
+        max-width: 400px;
+    }
+}
+
+.info__img {
+    width: 100%;
+    box-shadow: 0 8px 30px rgb(0 1 1 / 60%);
+
+    @include for-phones {
+        box-shadow: none;
+    }
+}
