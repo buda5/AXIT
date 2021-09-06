@@ -28,7 +28,7 @@
     max-width: 474px;
 
     @include for-tablets {
-        align-self: flex-end;
+        align-self: flex-start;
         max-width: 800px;
         margin-bottom: 40px;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-.info__header {
+.info__title {
     font-family: $main-font;
     font-size: 20px;
     font-weight: 700;
@@ -46,17 +46,13 @@
     margin-bottom: 52px;
     position: relative;
 
-    @include for-tablets {
-        text-align: right;
-    }
-
     @include for-phones {
         font-size: 17px;
         margin-bottom: 40px;
     }
 }
 
-.info__header::after {
+.info__title::after {
     content: '';
     position: absolute;
     left: 0;
@@ -64,11 +60,6 @@
 	width: 64px;
     background-color: $main-color;
     bottom: -26px;
-
-    @include for-tablets {
-        left: auto;
-        right: 0;
-    }
 
     @include for-phones {
         width: 50px;
@@ -82,10 +73,6 @@
     line-height: 20px;
     color: $text-color;
     margin-bottom: 20px;
-
-    @include for-tablets {
-        text-align: right;
-    }
 
     @include for-phones {
         font-size: 13px;

@@ -58,7 +58,7 @@
     width: 100%;
 }
 
-.banner__header {
+.banner__title {
     font-family: $second-font;
     color: #ffffff;
     font-weight: 400;
@@ -82,7 +82,7 @@
     }
 }
 
-.banner__header::after {
+.banner__title::after {
     position: absolute;
 	content: '';
 	height: 2px;

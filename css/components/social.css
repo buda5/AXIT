@@ -28,19 +28,19 @@
   }
 }
 
-.social__header {
+.social__title {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #333333;
   margin-bottom: 3px;
 }
 @media (max-width: 1199px) {
-  .social__header {
+  .social__title {
     margin-bottom: 0;
   }
 }
 @media (max-width: 641px) {
-  .social__header {
+  .social__title {
     font-size: 17px;
     margin-bottom: 10px;
   }

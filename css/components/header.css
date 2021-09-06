@@ -73,7 +73,7 @@
 
 @media (max-width: 1199px) {
   .header__item {
-    margin-bottom: 12px;
+    margin-bottom: 18px;
   }
   .header__item:last-of-type {
     margin-bottom: 0;

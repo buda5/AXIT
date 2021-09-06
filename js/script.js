@@ -9,7 +9,7 @@ $('.header__link').on("click", function() {
 
 $('.header__btn').on("click", function() {
 	$(this).toggleClass('open');
-    $('.header__nav-bar').toggleClass('expand');
+    $('.header__navbar').toggleClass('expand');
 });
 
 // Activating a tab in the features section

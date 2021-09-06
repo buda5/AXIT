@@ -65,7 +65,7 @@
   }
 }
 
-.options__header {
+.options__title {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -74,13 +74,13 @@
   position: relative;
 }
 @media (max-width: 641px) {
-  .options__header {
+  .options__title {
     font-size: 17px;
     margin-bottom: 40px;
   }
 }
 
-.options__header::after {
+.options__title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -90,7 +90,7 @@
   bottom: -26px;
 }
 @media (max-width: 641px) {
-  .options__header::after {
+  .options__title::after {
     width: 50px;
     bottom: -20px;
   }
@@ -146,6 +146,9 @@
 }
 
 .options__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ff8b38;
 }
 
