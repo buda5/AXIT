@@ -23,3 +23,13 @@ $('.features__tab').on("click", function() {
     $('.features__tab').removeClass('features__tab--active');
     $(this).addClass('features__tab--active');
 });
+
+// Testimonials section carousel
+
+$('.testimonials__carousel').slick({
+	autoplay: true,
+	autoplaySpeed: 7000,
+	dots: true,
+	arrows: false,
+	appendDots: $('.testimonials__pagination')
+});
