@@ -549,21 +549,21 @@
   flex-wrap: wrap;
 }
 
-.sicial__icon {
+.social__icon {
   font-size: 34px;
   color: #cccccc;
   transition: color 0.2s;
 }
-.sicial__icon:active, .sicial__icon:hover {
+.social__icon:active, .social__icon:hover {
   color: #666666;
 }
 @media (max-width: 1199px) {
-  .sicial__icon {
+  .social__icon {
     font-size: 30px;
   }
 }
 @media (max-width: 641px) {
-  .sicial__icon {
+  .social__icon {
     font-size: 26px;
   }
 }
@@ -1831,7 +1831,8 @@
 .form__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 42px;
+  min-height: 153px;
 }
 @media (max-width: 1199px) {
   .form__wrapper {
@@ -1861,9 +1862,21 @@
   font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #c4c4c4;
 }
+@media (max-width: 641px) {
+  .contact__input {
+    font-size: 13px;
+  }
+}
 .contact__input:focus {
   outline: none;
   border: 1px solid #ff8b38;
+}
+.contact__input:-webkit-autofill, .contact__input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+.contact__input:last-child {
+  margin-bottom: 0;
 }
 .contact__input::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
@@ -1881,20 +1894,11 @@
   font-family: "Open Sans", sans-serif;
   color: #c4c4c4;
 }
-.contact__input:-webkit-autofill, .contact__input:-webkit-autofill:hover {
-  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
-  box-shadow: 0 0 0px 1000px #ffffff inset;
-}
-@media (max-width: 641px) {
-  .contact__input {
-    font-size: 13px;
-  }
-}
 
 .contact__message {
   resize: none;
   width: 100%;
-  height: 153px;
+  height: 100%;
   padding: 5px 5px 5px 10px;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -1955,6 +1959,56 @@
     font-size: 11px;
     padding: 8px 16px;
   }
+}
+
+.footer {
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social-box {
+  margin-bottom: 5px;
+  max-width: 300px;
+  width: 100%;
+}
+@media (max-width: 641px) {
+  .footer__social-box {
+    max-width: 230px;
+  }
+}
+
+.footer__list-icons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__icon {
+  font-size: 28px;
+  color: #cccccc;
+  transition: color 0.2s;
+}
+.footer__icon:active, .footer__icon:hover {
+  color: #ffffff;
+}
+@media (max-width: 641px) {
+  .footer__icon {
+    font-size: 20px;
+  }
+}
+
+.footer__desc {
+  color: #9a9b9f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 
 * {

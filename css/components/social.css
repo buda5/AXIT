@@ -81,21 +81,21 @@
   flex-wrap: wrap;
 }
 
-.sicial__icon {
+.social__icon {
   font-size: 34px;
   color: #cccccc;
   transition: color 0.2s;
 }
-.sicial__icon:active, .sicial__icon:hover {
+.social__icon:active, .social__icon:hover {
   color: #666666;
 }
 @media (max-width: 1199px) {
-  .sicial__icon {
+  .social__icon {
     font-size: 30px;
   }
 }
 @media (max-width: 641px) {
-  .sicial__icon {
+  .social__icon {
     font-size: 26px;
   }
 }
