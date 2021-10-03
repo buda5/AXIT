@@ -1,0 +1,103 @@
+.social {
+  background-color: #ffffff;
+  padding: 17px 0;
+}
+
+.social__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 641px) {
+  .social__wrapper {
+    flex-direction: column;
+  }
+}
+
+.social__content-text {
+  max-width: 380px;
+}
+@media (max-width: 1199px) {
+  .social__content-text {
+    min-width: 200px;
+  }
+}
+@media (max-width: 641px) {
+  .social__content-text {
+    min-width: auto;
+  }
+}
+
+.social__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 3px;
+}
+@media (max-width: 1199px) {
+  .social__title {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 641px) {
+  .social__title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}
+
+.social__desc {
+  font-size: 14px;
+  color: #9c9da0;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 1199px) {
+  .social__desc {
+    display: none;
+  }
+}
+
+.social__icons-box {
+  padding-top: 6px;
+  max-width: 600px;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .social__icons-box {
+    max-width: 500px;
+  }
+}
+@media (max-width: 641px) {
+  .social__icons-box {
+    max-width: 300px;
+    padding-top: 0;
+  }
+}
+
+.social__list-icons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social__icon {
+  font-size: 34px;
+  color: #cccccc;
+  transition: color 0.2s;
+}
+.social__icon:active, .social__icon:hover {
+  color: #666666;
+}
+@media (max-width: 1199px) {
+  .social__icon {
+    font-size: 30px;
+  }
+}
+@media (max-width: 641px) {
+  .social__icon {
+    font-size: 26px;
+  }
+}
+
+/*# sourceMappingURL=social.css.map */

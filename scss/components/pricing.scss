@@ -1,0 +1,183 @@
+@import "../variables/vars";
+@import "../mixins/mixins";
+
+.pricing {
+    background-color: $bg-light;
+    padding-top: 100px;
+    padding-bottom: 103px;
+
+    @include for-tablets {
+        padding: 60px 0;
+    }
+
+    @include for-phones {
+        padding: 30px 0;
+    }
+}
+
+.pricing__header {
+    text-align: center;
+    margin-bottom: 79px;
+
+    @include for-phones {
+        margin-bottom: 40px;
+    }
+}
+
+.pricing__title {
+    font-family: $second-font;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $main-header-color;
+    margin-bottom: 50px;
+    position: relative;
+
+    @include for-phones {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.pricing__title::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+	width: 64px;
+    background-color: $main-color;
+    bottom: -24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @include for-phones {
+        width: 50px;
+    }
+}
+
+.pricing__subtitle {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $text-color;
+
+    @include for-phones {
+        font-size: 13px;
+    }
+}
+
+.pricing__boxes {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include for-tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.pricing__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 343px;
+    width: 100%;
+    box-shadow: 0 8px 30px rgb(0 1 1 / 20%);
+
+    @include for-tablets {
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    @include for-phones {
+        max-width: 250px;
+    }
+}
+
+.pricing__box-main {
+    background-color: $second-header-color;
+    color: #ffffff;
+    width: 100%;
+    border-bottom: 5px solid $main-color;
+}
+
+.pricing__box-title {
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #999999;
+    padding: 16px;
+
+    @include for-phones {
+        font-size: 18px;
+    }
+}
+
+.pricing__box-price {
+    font-family: $second-font;
+    font-weight: 600;
+    font-size: 95px;
+    margin-bottom: 3px;
+
+    @include for-phones {
+        font-size: 85px;
+    }
+
+    .pricing__box-currency {
+        font-size: 35px;
+
+        @include for-phones {
+            font-size: 30px;
+        }
+    }
+}
+
+.pricing__box-desc {
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    color: $text-color;
+    font-style: italic;
+    padding-bottom: 20px;
+
+    @include for-phones {
+        font-size: 13px;
+    }
+}
+
+.pricing__box-recom {
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $main-color;
+    padding-top: 9px;
+    padding-bottom: 4px;
+
+    @include for-phones {
+        font-size: 13px;
+    }
+}
+
+.pricing__box-secondary {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.pricing__box-list {
+    list-style: none;
+}
+
+.pricing__box-item {
+    color: $text-color;
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid $bg-light;
+
+    @include for-phones {
+        font-size: 13px;
+    }
+}

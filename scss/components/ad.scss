@@ -1,0 +1,97 @@
+@import "../variables/vars";
+@import "../mixins/mixins";
+
+.ad {
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url("../images/City-road-street.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 66px;
+    padding-bottom: 63px;
+    text-align: center;
+
+    @include for-tablets {
+        padding: 60px 0;
+    }
+
+    @include for-phones {
+        padding: 30px 0;
+    }
+}
+
+.ad__header {
+    color: #ffffff;
+    margin-bottom: 33px;
+}
+
+.ad__title {
+    font-family: $second-font;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 55px;
+    position: relative;
+
+    @include for-phones {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.ad__title::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+	width: 64px;
+    background-color: #ffffff;
+    bottom: -17px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @include for-phones {
+        width: 50px;
+    }
+}
+
+.ad__subtitle {
+    font-family: $second-font;
+    font-size: 16px;
+    font-weight: 300;
+
+    @include for-tablets {
+        font-size: 15px;
+    }
+
+    @include for-phones {
+        font-size: 13px;
+    }
+}
+
+.ad__btn {
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 9px 29px;
+    display: inline-block;
+    transition: all 0.2s;
+
+    &:active,
+    &:hover {
+        background-color: #ffffff;
+        color: $second-header-color;
+    }
+
+    @include for-tablets {
+        font-size: 13px;
+        padding: 8px 24px;
+    }
+
+    @include for-phones {
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+}

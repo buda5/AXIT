@@ -8,12 +8,416 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="css/main.css">
     <title>AXIT</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <div class="header__logo">
+                <img class="header__logo-img" src="images/Logo.png" alt="AXIT logo">
+            </div>
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#banner" class="header__link header__link--active">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#features" class="header__link">Features</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#about" class="header__link">About</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#pricing" class="header__link">Pricing</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#testimonials" class="header__link">Reviews</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contact" class="header__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__btn">
+                <div class="header__btn-burger"></div>
+           </div>
+        </div>
+    </header>
+
+    <main class="banner" id="banner">
+        <div class="container">
+            <div class="banner__wrapper">
+                <div class="banner__content">
+                    <div class="banner__logo">
+                        <img class="banner__logo-img" src="./images/Logo-large.png" alt="AXIT logo">
+                    </div>
+                    <h1 class="banner__title">Modern axure template for beautiful prototypes</h1>
+                    <div class="banner__desc-box">
+                        <p class="banner__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                    </div>
+                    <a href="javascript:;" class="banner__btn">Read more</a>
+                </div>
+                <div class="banner__form-box">
+                    <div class="banner__form-header">
+                        <h2 class="banner__form-tittle">Start Your <span>Free</span> Trial Today</h2>
+                    </div>
+                    <form  action="javascript:;" class="banner__form">
+                        <input class="banner__input" type="text" name="name" id="name1" placeholder="Name">
+                        <input class="banner__input" type="email" name="email" id="email1" placeholder="Email">
+                        <input class="banner__input" type="password" name="password" id="password" placeholder="Password">
+                        <input class="banner__submit" type="submit" value="Get Started">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="social">
+        <div class="container">
+            <div class="social__wrapper">
+                <div class="social__content-text">
+                    <h2 class="social__title">Social Media</h2>
+                    <p class="social__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                </div>
+                <div class="social__icons-box">
+                    <ul class="social__list-icons">
+                        <li class="social__item">
+                            <a href="javascript:;" class="social__icon"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="javascript:;" class="social__icon"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="javascript:;" class="social__icon"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="javascript:;" class="social__icon"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="javascript:;" class="social__icon"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="javascript:;" class="social__icon"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="javascript:;" class="social__icon"><i class="fas fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features__wrapper">
+                <div class="features__tabs">
+                    <div class="features__tab features__tab--active" data-tab="1">
+                        <p class="features__tab-title">Tab 1</p>
+                    </div>
+                    <div class="features__tab" data-tab="2">
+                        <p class="features__tab-title">Tab 2</p>
+                    </div>
+                    <div class="features__tab" data-tab="3">
+                        <p class="features__tab-title">Tab 3</p>
+                    </div>
+                </div>
+                <div class="features__content-text features__content-text--active" data-text="1">
+                    <h2 class="features__title">Expedita sapiente</h2>
+                    <p class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <p class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    <a href="javascript:;" class="features__btn">Call to Action</a>
+                </div>
+                <div class="features__content-text" data-text="2">
+                    <h2 class="features__title">Ipsam est aspernatur</h2>
+                    <p class="features__desc">Vide augue no quo. Ex gubergren necessitatibus eos, usu munere partem ei, ne dolores scaevola definitionem qui. Nec dolore nostro id. Ad ius scripta complectitur. Vel graeco lobortis conceptam ex. Ut justo eirmod alienum est, te pri quando quaerendum.</p>
+                    <p class="features__desc">Prima facilis omnesque sea cu, has brute timeam eligendi ex. Nec virtute eripuit legimus an. Cum cetero quaerendum in. Nam ea habeo dolorum accumsan, homero dissentiet est ea.</p>
+                </div>
+                <div class="features__content-text" data-text="3">
+                    <h2 class="features__title">Facilis dignissimos</h2>
+                    <p class="features__desc">Nec elit scaevola consetetur in, cu meliore deterruisset duo. Novum iusto disputationi cu mea, nec ad nonumy doctus consequat, fabulas similique pri te. Ei ius suas theophrastus, utinam ridens audire duo ea, no solet menandri nam.</p>
+                    <p class="features__desc">Per at impetus diceret, detracto recteque persecuti eum ne, diceret facilisi consulatu has id. Cetero rationibus constituto ea quo, ex pri mutat propriae vituperatoribus. Eum ad feugiat democritum cotidieque. Legere praesent periculis ex pro. At per tantas reformidans, ex laoreet partiendo constituam eum, nam commune.</p>
+                </div>
+                <div class="features__image-box">
+                    <img class="features__img" src="images/City-vector.png" alt="City">
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <section class="options">
+        <div class="container">
+            <div class="options__wrapper">
+                <div class="options__image-box">
+                    <img class="options__img" src="images/City-landscape1.jpg" alt="City landscape">
+                </div>
+                <div class="options__content-text">
+                    <h2 class="options__title">Officia voluptates dolore</h2>
+                    <p class="options__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                    <div class="options__inner">
+                        <div class="options__icon-box">
+                            <span class="options__icon"><i class="fas fa-cloud-upload-alt"></i></span>
+                        </div>
+                        <div class="options__text-box">
+                            <h3 class="options__box-title">Ipsam</h3>
+                            <p class="options__box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                    </div>
+                    <div class="options__inner">
+                        <div class="options__icon-box">
+                            <span class="options__icon"><i class="fas fa-cloud-download-alt"></i></span>
+                        </div>
+                        <div class="options__text-box">
+                            <h3 class="options__box-title">Facilis</h3>
+                            <p class="options__box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <div class="info__content-text">
+                    <h2 class="info__title">Laboriosam dolore vitae</h2>
+                    <p class="info__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <p class="info__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                </div>
+                <div class="info__image-box">
+                    <img class="info__img" src="images/City-landscape2.jpg" alt="City landscape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__header">
+                    <h2 class="about__title">Why this is awesome</h2>
+                    <p class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="about__boxes">
+                    <div class="about__box">
+                        <div class="about__icon-box">
+                            <span class="about__icon"><i class="far fa-lightbulb"></i></span>
+                        </div>
+                        <h2 class="about__box-title">Thoughtful Design</h2>
+                        <p class="about__box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                    <div class="about__box">
+                        <div class="about__icon-box">
+                            <span class="about__icon"><i class="far fa-keyboard"></i></span>
+                        </div>
+                        <h2 class="about__box-title">Well Crafted</h2>
+                        <p class="about__box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                    <div class="about__box">
+                        <div class="about__icon-box">
+                            <span class="about__icon"><i class="fas fa-bolt"></i></span>
+                        </div>
+                        <h2 class="about__box-title">Easy to Customize</h2>
+                        <p class="about__box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <d iv class="pricing__wrapper">
+                <div class="pricing__header">
+                    <h2 class="pricing__title">Pricing options</h2>
+                    <p class="pricing__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="pricing__boxes">
+                    <div class="pricing__box">
+                        <div class="pricing__box-main">
+                            <p class="pricing__box-title">Basic</p>
+                            <p class="pricing__box-price"><span class="pricing__box-currency">$</span>0</p>
+                            <p class="pricing__box-desc">Free for Life</p>
+                        </div>
+                        <div class="pricing__box-secondary">
+                            <ul class="pricing__box-list">
+                                <li class="pricing__box-item">1 gb of space</li>
+                                <li class="pricing__box-item">10 gb of bandwidth</li>
+                                <li class="pricing__box-item">3 websites</li>
+                                <li class="pricing__box-item">Basic customization</li>
+                                <li class="pricing__box-item">Wordpress integration</li>
+                                <li class="pricing__box-item">Email support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pricing__box">
+                        <div class="pricing__box-main">
+                            <p class="pricing__box-title">Professional</p>
+                            <p class="pricing__box-price"><span class="pricing__box-currency">$</span>19</p>
+                            <p class="pricing__box-desc">Monthly Payment</p>
+                            <p class="pricing__box-recom">Our most popular</p>
+                        </div>
+                        <div class="pricing__box-secondary">
+                            <ul class="pricing__box-list">
+                                <li class="pricing__box-item">5 gb of space</li>
+                                <li class="pricing__box-item">50 gb of bandwidth</li>
+                                <li class="pricing__box-item">12 websites</li>
+                                <li class="pricing__box-item">Advanced customization</li>
+                                <li class="pricing__box-item">Wordpress integration</li>
+                                <li class="pricing__box-item">Email support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pricing__box">
+                        <div class="pricing__box-main">
+                            <p class="pricing__box-title">Enterprise</p>
+                            <p class="pricing__box-price"><span class="pricing__box-currency">$</span>70</p>
+                            <p class="pricing__box-desc">Monthly Payment</p>
+                        </div>
+                        <div class="pricing__box-secondary">
+                            <ul class="pricing__box-list">
+                                <li class="pricing__box-item">Unlimited space</li>
+                                <li class="pricing__box-item">Unlimited bandwidth</li>
+                                <li class="pricing__box-item">100 websites</li>
+                                <li class="pricing__box-item">Advanced customization</li>
+                                <li class="pricing__box-item">Wordpress integration</li>
+                                <li class="pricing__box-item">24/7 customer support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </d>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials__wrapper">
+                <div class="testimonials__icon-box">
+                    <i class="testimonials__icon fas fa-quote-right"></i>
+                </div>
+                <div class="testimonials__header">
+                    <h2 class="testimonials__title">What our customers are saying</h2>
+                </div>
+                <div class="testimonials__carousel">
+                    <div class="testimonial">
+                        <div class="testimonial__desc-box">
+                            <p class="testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="testimonial__image-box">
+                                <img class="testimonial__image" src="./images/testimonials/testimonial-author-1.jpg" alt="Author image">
+                            </div>
+                            <div class="testimonial__info">
+                                <h3 class="testimonial__name">Jeremy H.</h3>
+                                <span class="testimonial__profession">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__desc-box">
+                            <p class="testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="testimonial__image-box">
+                                <img class="testimonial__image" src="./images/testimonials/testimonial-author-2.jpg" alt="Author image">
+                            </div>
+                            <div class="testimonial__info">
+                                <h3 class="testimonial__name">John S.</h3>
+                                <span class="testimonial__profession">Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__desc-box">
+                            <p class="testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="testimonial__image-box">
+                                <img class="testimonial__image" src="./images/testimonials/testimonial-author-3.jpg" alt="Author image">
+                            </div>
+                            <div class="testimonial__info">
+                                <h3 class="testimonial__name">Susan W.</h3>
+                                <span class="testimonial__profession">Photographer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ad">
+        <div class="container">
+            <div class="ad__header">
+                <h2 class="ad__title">Stylish axure design</h2>
+                <p class="ad__subtitle">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+            </div>
+            <a href="javascript:;" class="ad__btn">Call to Action</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__header">
+                <h2 class="contact__title">Contact us</h2>
+                <p class="contact__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <form action="javascript:;" class="contact__form">
+                <div class="form__wrapper">
+                    <div class="contact__info-box">
+                        <input class="contact__input" type="text" name="name" id="name2" placeholder="Name">
+                        <input class="contact__input" type="email" name="email" id="email2" placeholder="Email">
+                        <input class="contact__input" type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="contact__message-box">
+                        <textarea class="contact__message" name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <input class="contact__submit" type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__social-box">
+                <ul class="footer__list-icons">
+                    <li class="footer__item">
+                        <a href="javascript:;" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:;" class="footer__icon"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:;" class="footer__icon"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:;" class="footer__icon"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:;" class="footer__icon"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:;" class="footer__icon"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:;" class="footer__icon"><i class="fas fa-rss"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copy">
+                <p class="footer__desc">&copy; 2021 Axure Themes</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+@import "../variables/vars";
+@import "../mixins/mixins";
+
+.social {
+    background-color: #ffffff;
+    padding: 17px 0;
+}
+
+.social__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-phones {
+        flex-direction: column;
+    }
+}
+
+.social__content-text {
+    max-width: 380px;
+
+    @include for-tablets {
+        min-width: 200px;
+    }
+
+    @include for-phones {
+        min-width: auto;
+    }
+}
+
+.social__title {
+    font-family: $main-font;
+    font-size: 20px;
+    color: $second-header-color;
+    margin-bottom: 3px;
+
+    @include for-tablets {
+        margin-bottom: 0;
+    }
+
+    @include for-phones {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+}
+
+.social__desc {
+    font-size: 14px;
+    color: $text-color-light;
+    font-family: $main-font;
+
+    @include for-tablets {
+        display: none;
+    }
+}
+
+.social__icons-box {
+    padding-top: 6px;
+    max-width: 600px;
+    width: 100%;
+
+    @include for-tablets {
+        max-width: 500px;
+    }
+
+    @include for-phones {
+        max-width: 300px;
+        padding-top: 0;
+    }
+}
+
+.social__list-icons {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social__icon {
+    font-size: 34px;
+    color: $logo-color;
+    transition: color 0.2s;
+
+    &:active,
+    &:hover {
+        color: $logo-color-dark;
+    }
+
+    @include for-tablets {
+        font-size: 30px;
+    }
+
+    @include for-phones {
+        font-size: 26px;
+    }
+}

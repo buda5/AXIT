@@ -1,0 +1,196 @@
+@import "../variables/vars";
+@import "../mixins/mixins";
+
+.features {
+    background-color: $bg-light;
+    padding-top: 150px;
+    padding-bottom: 115px;
+
+    @include for-tablets {
+        padding: 60px 0;
+    }
+
+    @include for-phones {
+        padding: 30px 0;
+    }
+}
+
+.features__wrapper {
+    display: flex;
+
+    @include for-phones {
+        flex-direction: column;
+    }
+}
+
+.features__tabs {
+    margin-right: 102px;
+
+    @include for-tablets {
+        margin-right: 80px;
+    }
+
+    @include for-phones {
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.features__tab {
+    width: 110px;
+    height: 110px;
+    background-color: $bg-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: $tab-color-hover;
+    }
+
+    &:first-child {
+        border-radius: 4px 4px 0 0;
+
+        @include for-phones {
+            border-radius: 4px 0 0 4px;
+        }
+    }
+
+    &:last-child {
+        border-radius: 0 0 4px 4px;
+
+        @include for-phones {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+
+    @include for-tablets {
+        width: 90px;
+        height: 90px;
+    }
+
+    @include for-phones {
+        margin-bottom: 0;
+        margin-right: 1px;
+        width: 90px;
+        height: 40px;   
+    }
+}
+
+.features__tab--active {
+    background-color: $main-color;
+    pointer-events: none;
+}
+
+.features__tab-title {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: $main-font;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include for-phones {
+        font-size: 12px;
+    }
+}
+
+.features__content-text {
+    display: none;
+    padding-top: 3px;
+    max-width: 500px;
+    margin-right: 70px;
+
+    @include for-tablets {
+        margin-right: 0;
+    }
+}
+
+.features__content-text--active {
+    display: block;
+}
+
+.features__title {
+    color: $second-header-color;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 47px;
+    position: relative;
+
+    @include for-phones {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+}
+
+.features__title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+	width: 64px;
+    background-color: $main-color;
+    bottom: -25px;
+
+    @include for-phones {
+        width: 50px;
+        bottom: -20px;
+    }
+}
+
+.features__desc {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $text-color;
+    line-height: 20px;
+    margin-top: 20px;
+
+    @include for-phones {
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 15px;
+    }
+}
+
+.features__btn {
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $main-color;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    padding: 12px 23px;
+    margin-top: 47px;
+    display: inline-block;
+
+    &:active,
+    &:hover {
+        background-color: $main-color-light;
+    }
+
+    @include for-tablets {
+        font-size: 13px;
+        padding: 10px 21px;
+        margin-top: 30px;
+    }
+
+    @include for-phones {
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+}
+
+.features__image-box {
+    padding-top: 24px;
+
+    @include for-tablets {
+        display: none;
+    }
+}
