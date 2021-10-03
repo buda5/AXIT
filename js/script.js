@@ -12,6 +12,13 @@ $('.header__btn').on("click", function() {
     $('.header__navbar').toggleClass('expand');
 });
 
+// Closing navigation bar when click on link on tablets and mobiles
+
+$('.header__link').on("click", function(){
+	$('.header__navbar').removeClass('expand');
+	$('.header__btn').removeClass('open');
+});
+
 // Activating a tab in the features section
 
 $('.features__tab').on("click", function() {
@@ -32,4 +39,14 @@ $('.testimonials__carousel').slick({
 	dots: true,
 	arrows: false,
 	appendDots: $('.testimonials__pagination')
+});
+
+// Smooth scrolling when clicking an link
+
+$('.header__link').on('click', (event) => {
+  	const hash = event.currentTarget.hash;
+  	if (hash) {
+		event.preventDefault();
+		$('html, body').animate({scrollTop: $(hash).offset().top - 57}, 1000);
+  	}
 });

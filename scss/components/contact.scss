@@ -98,10 +98,6 @@
     font-family: $main-font;
     border-bottom: 1px solid $placeholder-color;
 
-    @include for-phones {
-        font-size: 13px;
-    }
-
     &:focus {
 		outline: none;
         border: 1px solid $main-color;
@@ -121,6 +117,16 @@
         font-family: $main-font;
         color: $placeholder-color;
     }
+
+    @include for-tablets {
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    @include for-phones {
+        font-size: 13px;
+    }
 }
 
 .contact__message {
@@ -133,15 +139,19 @@
     border: 1px solid transparent;
     border-bottom: 1px solid $placeholder-color;
 
+    &:focus {
+		outline: none;
+        border: 1px solid $main-color;
+	}
+
     @include placeholder {
         font-family: $main-font;
         color: $placeholder-color;
     }
 
-    &:focus {
-		outline: none;
-        border: 1px solid $main-color;
-	}
+    @include for-tablets {
+        min-height: 153px;
+    }
 
     @include for-phones {
         font-size: 13px;

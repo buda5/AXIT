@@ -1862,11 +1862,6 @@
   font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #c4c4c4;
 }
-@media (max-width: 641px) {
-  .contact__input {
-    font-size: 13px;
-  }
-}
 .contact__input:focus {
   outline: none;
   border: 1px solid #ff8b38;
@@ -1894,6 +1889,16 @@
   font-family: "Open Sans", sans-serif;
   color: #c4c4c4;
 }
+@media (max-width: 1199px) {
+  .contact__input:last-child {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 641px) {
+  .contact__input {
+    font-size: 13px;
+  }
+}
 
 .contact__message {
   resize: none;
@@ -1904,6 +1909,10 @@
   font-family: "Open Sans", sans-serif;
   border: 1px solid transparent;
   border-bottom: 1px solid #c4c4c4;
+}
+.contact__message:focus {
+  outline: none;
+  border: 1px solid #ff8b38;
 }
 .contact__message::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
@@ -1921,9 +1930,10 @@
   font-family: "Open Sans", sans-serif;
   color: #c4c4c4;
 }
-.contact__message:focus {
-  outline: none;
-  border: 1px solid #ff8b38;
+@media (max-width: 1199px) {
+  .contact__message {
+    min-height: 153px;
+  }
 }
 @media (max-width: 641px) {
   .contact__message {
